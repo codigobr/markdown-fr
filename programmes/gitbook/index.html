@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69958365-6"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-69958365-6');
+    </script>
+    <!-- Auto ads - Google -->
+    <script data-ad-client="ca-pub-3427355473051563" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="canonical" href="https://fr.markdown.net.br/programmes/gitbook/">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="author" content="Robert Salles">
+    <meta name="description" content="Tutoriel Markdown™ complet pour les débutants avec plusieurs exemples d'utilisation du langage de balisage le plus simple au monde.">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fr.markdown.net.br/programmes/gitbook/">
+    <meta property="og:title" content="GitBook® & Markdown™ - [Cheatsheet] Guide de référence">
+    <meta property="og:description" content="Tutoriel Markdown™ complet pour les débutants avec plusieurs exemples d'utilisation du langage de balisage le plus simple au monde.">
+    <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
+
+    <title>GitBook® & Markdown™ - [Cheatsheet] Guide de référence</title>
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2196f3">
+    <meta name="msapplication-TileColor" content="#2196f3">
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#2196f3">
+    <!-- CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
+  </head>
+  <body class="themes" cz-shortcut-listen="true">
+    <header>
+      <div class="container">
+  <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle">
+  <i class="material-icons">menu</i>
+  </a>
+</div>
+<ul id="nav-mobile" class="sidenav">
+  <li class="logo blue">
+    <a id="logo-container" href="/" class="brand-logo">
+    <img src="https://markdown.net.br/assets/img/markdown-logo-transparent.svg" height="100">
+    </a>
+  </li>
+  <li class="push-it-down"></li>
+  <li class="search white">
+    <div class="search-wrapper">
+      <input id="search" placeholder="Chercher"><i class="material-icons">search</i>
+      <div class="search-results"></div>
+    </div>
+  </li>
+  <li class="bold white">
+    <a href="/introduction/" class="waves-effect waves-blue"><i class="tiny material-icons">child_care</i>Introduction</a>
+  </li>
+  <li class="bold white">
+    <a href="/syntaxe-de-base/" class="waves-effect waves-blue"><i class="tiny material-icons">short_text</i>Syntaxe de base</a>
+  </li>
+  <li class="bold white">
+    <a href="/syntaxe-etendue/" class="waves-effect waves-blue"><i class="tiny material-icons">format_align_left</i>Syntaxe étendue</a>
+  </li>
+  <li class="bold white">
+    <a href="/reference-rapide/" class="waves-effect waves-blue"><i class="tiny material-icons">help_outline</i>Référence rapide</a>
+  </li>
+  <li class="bold white">
+    <a href="/programmes/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Programmes</a>
+  </li>
+</ul>
+    </header>
+    <main>
+      <div class="section" id="index-banner">
+        <div class="container">
+          <div class="row" style="margin-bottom: 0;">
+            <div class="col s12 m6 l7 offset-m1 offset-l1">
+              <h1>GitBook</h1>
+              <h4 class="light">GitBook est un outil online qui héberge des sites de documentation prenant en charge Markdown.</h4>
+              <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="/">
+                      <span itemprop="name">Markdown</span></a>
+                  <meta itemprop="position" content="1" />
+                </li>
+                <li>
+<i class="fas fa-chevron-right chevron-separator"></i>
+</li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+<a itemprop="item" href="/programmes/">
+<span itemprop="name">Éditeurs Markdown</span>
+</a>
+<meta itemprop="position" content="2" />
+</li>
+<li>
+<i class="fas fa-chevron-right chevron-separator"></i>
+</li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+<span itemprop="name">GitBook</span>
+<meta itemprop="position" content="3" />
+</li>
+
+              </ol>
+            </div>
+            <div class="col s12 m5 l4 mt-s-30" align="center">
+            	<!-- square-fixed-300-250 -->
+            	<ins class="adsbygoogle"
+            	     style="display:inline-block;width:300px;height:250px"
+            	     data-ad-client="ca-pub-3427355473051563"
+            	     data-ad-slot="1035906960"></ins>
+            	<script>
+            	     (adsbygoogle = window.adsbygoogle || []).push({});
+            	</script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <!--  Outer row  -->
+        <div class="row">
+          <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
+            <div class="row scrollspy">
+  <div class="col s12">
+    <h2 id="intro">Aperçu</h2>
+
+    <p>Puisqu'il s'agit d'un outil online, GitBook a un éditeur Markdown qui s'exécute directement dans votre navigateur, donc l'outil offre beaucoup de fonctionnalités pour vous permettre de créer votre documentation.</p>
+
+    <p>Si vous avez besoin de plus de contrôle sur votre contenu, GitBook prend également en charge <a href="https://docs.gitbook.com/integrations/github" target="_blank">l'intégration avec les référentiels GitHub</a>.</p>
+
+    <p class="mv-40">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-3427355473051563"
+             data-ad-slot="3854885260"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </p>
+
+    <p>Avec GitBook, vous pouvez créer votre site Web, puis le publier à l'aide d'un domaine personnalisé.</p>
+
+    <p>Mais il convient de mentionner que GitBook a commencé comme un projet open source et n'avait qu'une petite offre commerciale pour lever des fonds pour l'entreprise.</p>
+
+    <p>Aujourd'hui, l'outil est fermé et propriétaire, alors gardez cela à l'esprit si vous avez l'intention d'adhérer à l'utilisation de GitBook.</p>
+
+    <p>Le <a href="https://github.com/GitbookIO/gitbook" target="_blank">projet open source</a> existe toujours et peut être utilisé par n'importe qui, mais GitBook ne prend plus en charge ce projet, donc seuls les éléments Markdown compatibles avec l'outil propriétaire seront listés.</p>
+
+    <p class="mv-40">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-3427355473051563"
+             data-ad-slot="3854885260"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </p>
+
+    <p>Même étant une application fermée, GitBook présente toujours des avantages par rapport aux autres outils de ce type.</p>
+
+    <p>Par exemple, la construction et l'hébergement du site Web relèvent de la responsabilité du programme lui-même.</p>
+
+    <p>GitBook fournit un éditeur Markdown très intuitif, avec des contrôles WYSIWYG faciles à utiliser.</p>
+
+    <p>Ainsi, même les utilisateurs novices sont à l'aise pour éditer des documents Markdown.</p>
+
+    <p>Une autre caractéristique intéressante de l'outil est le masquage des marques de Markdown lorsque vous tapez.</p>
+
+    <p class="mv-40">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-3427355473051563"
+             data-ad-slot="3854885260"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </p>
+
+    <p>L'éditeur peut sembler étrange au début, mais avec le temps, vous comprenez bien.</p>
+
+    <p>GitBook est également compatible avec le copier-coller, prenez votre contenu Markdown et collez-le directement dans l'interface de l'outil.</p>
+
+    <p>Le site officiel de GitBook se trouve à <a href="https://www.gitbook.com/" target="_blank">https://www.gitbook.com/</a>.</p>
+
+
+    <h2 id="markdown-support">Prise en charge de Markdown sur GitBook</h2>
+
+    <p>Le <a href="#table-1-1">Tableau 1.1</a> présente les éléments Markdown compatibles avec GitBook.</p>
+
+    <table class="responsive-table" id="table-1-1">
+      <thead>
+        <tr>
+          <th>Élément</th>
+          <th>Soutien</th>
+          <th>Informations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="/syntaxe-de-base/#headings" target="_blank">Titres</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#paragraphs" target="_blank">Les paragraphes</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#line-break" target="_blank">Sauts de ligne</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#bold" target="_blank">Gras</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#italics" target="_blank">Italique</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#blockquote" target="_blank">Blockquote</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#lists-ordered" target="_blank">Listes ordonnées</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#lists-ordered" target="_blank">Listes non ordonnées</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#code" target="_blank">Code</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#horizontal-rule" target="_blank">Lignes horizontales</a></td>
+          <td class="red lighten-4">Non</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#links" target="_blank">Links</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#images" target="_blank">Images</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-tables" target="_blank">les tables</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#fenced-code-block" target="_blank">Blocs de code clôturés</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td>Vous pouvez également mettre en évidence la syntaxe du langage de programmation du bloc.</td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-footnotes" target="_blank">Notes de bas de page</a></td>
+          <td class="red lighten-4">Non</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-title-id" target="_blank">Identifiant du titre</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-definition-lists" target="_blank">Listes de définitions</a></td>
+          <td class="red lighten-4">Non</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-strikethrough" target="_blank">Barré</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-task-lists" target="_blank">Listes de tâches</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#emojis-copy-and-paste" target="_blank">Emoji (copier et coller)</a></td>
+          <td class="white lighten-4">Inconnu</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#emojis-access-code" target="_blank">Emoji (codes d'accès)</a></td>
+          <td class="white lighten-4">Inconnu</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-auto-link" target="_blank">URL automatique Link</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-disable-auto-link" target="_blank">Désactiver URL automatique link</a></td>
+          <td class="red lighten-4">Non</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#html" target="_blank">HTML</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="see-also">Voir aussi</h2>
+
+    <p><a href="https://docs.gitbook.com/content-editing/markdown" target="_blank">Documentation Markdown sur GitBook</a></p>
+  </div> <!-- Fim do conteúdo principal -->
+
+</div>
+            <div class="col-12">
+  <ul class="collapsible">
+    <li class="active">
+      <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Partager</div>
+      <div class="collapsible-body">
+        <div class="collection">
+          <a href="#!" class="collection-item" data-sharer="twitter" data-title="GitBook® & Markdown™ - [Cheatsheet] Guide de référence" data-hashtags="markdown" data-url="https://fr.markdown.net.br/programmes/gitbook/">
+            <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Partager sur Twitter
+          </a>
+          <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://fr.markdown.net.br/programmes/gitbook/">
+            <i class="fab fa-facebook color-facebook"></i>&nbsp;&nbsp;Partager sur Facebook
+          </a>
+          <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://fr.markdown.net.br/programmes/gitbook/">
+            <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Partager sur Linkedin
+          </a>
+          <a href="#!" class="collection-item" data-sharer="email" data-title="GitBook® & Markdown™ - [Cheatsheet] Guide de référence" data-url="https://fr.markdown.net.br/programmes/gitbook/" data-subject="Salut! D'accord? J'ai trouvé ce guide Markdown très facile à suivre, jetez-y un œil quand vous le pouvez. J'espère que ce sera utile, à plus tard." data-to="email@host.com">
+            <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Partager par email
+          </a>
+          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="GitBook® & Markdown™ - [Cheatsheet] Guide de référence" data-url="https://fr.markdown.net.br/programmes/gitbook/">
+            <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Partager par Whatsapp
+          </a>
+          <a href="#!" class="collection-item" data-sharer="telegram" data-title="GitBook® & Markdown™ - [Cheatsheet] Guide de référence" data-url="https://fr.markdown.net.br/programmes/gitbook/" data-to="(00) 99999-9999">
+            <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Partager par Telegram
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+          </div>
+          <!-- Table of contents -->
+          <div class="col hide-on-small-only m3 xl3 offset-xl1">
+            <div class="toc-wrapper" id="sticky-navigator">
+            </div>
+          </div>
+          <!-- Table of contents -->
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer docs-footer">
+  <div class="container">
+    <div class="row" style="margin-bottom: 0;">
+      <div class="col s12 m10 offset-m1">
+        <div class="row">
+          <div class="col l4 s12" style="overflow: hidden;">
+            <a href="https://twitter.com/CodigoNetwork" class="twitter-follow-button" data-show-count="true" data-size="large" data-dnt="true">Suivre @CodigoNetwork</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div>
+            &copy;&nbsp;<noscript>2020</noscript><script type="text/javascript">document.write(new Date().getFullYear());</script> <strong>Markdown</strong>, Tous les droits sont réservés.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <!--  Scripts-->
+    <script src="/assets/js/bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
+    <!-- Lightbox das imagens -->
+    <script>
+      $(document).ready(function(){
+         $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
+       });
+      anchors.add("h2, h3, h5");
+      $('#sticky-navigator').stickyNavigator();
+    </script>
+    <!-- Twitter Button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </body>
+</html>

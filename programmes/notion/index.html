@@ -1,0 +1,460 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69958365-6"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-69958365-6');
+    </script>
+    <!-- Auto ads - Google -->
+    <script data-ad-client="ca-pub-3427355473051563" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="canonical" href="https://fr.markdown.net.br/programmes/notion/">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="author" content="Robert Salles">
+    <meta name="description" content="Tutoriel Markdown™ complet pour les débutants avec plusieurs exemples d'utilisation du langage de balisage le plus simple au monde.">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fr.markdown.net.br/programmes/notion/">
+    <meta property="og:title" content="Notion® & Markdown™ - Table de formatage [Cheatsheet]">
+    <meta property="og:description" content="Tutoriel Markdown™ complet pour les débutants avec plusieurs exemples d'utilisation du langage de balisage le plus simple au monde.">
+    <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
+
+    <title>Notion® & Markdown™ - Table de formatage [Cheatsheet]</title>
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2196f3">
+    <meta name="msapplication-TileColor" content="#2196f3">
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#2196f3">
+    <!-- CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
+  </head>
+  <body class="themes" cz-shortcut-listen="true">
+    <header>
+      <div class="container">
+  <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle">
+  <i class="material-icons">menu</i>
+  </a>
+</div>
+<ul id="nav-mobile" class="sidenav">
+  <li class="logo blue">
+    <a id="logo-container" href="/" class="brand-logo">
+    <img src="https://markdown.net.br/assets/img/markdown-logo-transparent.svg" height="100">
+    </a>
+  </li>
+  <li class="push-it-down"></li>
+  <li class="search white">
+    <div class="search-wrapper">
+      <input id="search" placeholder="Chercher"><i class="material-icons">search</i>
+      <div class="search-results"></div>
+    </div>
+  </li>
+  <li class="bold white">
+    <a href="/introduction/" class="waves-effect waves-blue"><i class="tiny material-icons">child_care</i>Introduction</a>
+  </li>
+  <li class="bold white">
+    <a href="/syntaxe-de-base/" class="waves-effect waves-blue"><i class="tiny material-icons">short_text</i>Syntaxe de base</a>
+  </li>
+  <li class="bold white">
+    <a href="/syntaxe-etendue/" class="waves-effect waves-blue"><i class="tiny material-icons">format_align_left</i>Syntaxe étendue</a>
+  </li>
+  <li class="bold white">
+    <a href="/reference-rapide/" class="waves-effect waves-blue"><i class="tiny material-icons">help_outline</i>Référence rapide</a>
+  </li>
+  <li class="bold white">
+    <a href="/programmes/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Programmes</a>
+  </li>
+</ul>
+    </header>
+    <main>
+      <div class="section" id="index-banner">
+        <div class="container">
+          <div class="row" style="margin-bottom: 0;">
+            <div class="col s12 m6 l7 offset-m1 offset-l1">
+              <h1>Notion</h1>
+              <h4 class="light">Notion est un outil robuste utilisé pour gérer les bases de connaissances, annoter, suivre les tâches et plus encore.</h4>
+              <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="/">
+                      <span itemprop="name">Markdown</span></a>
+                  <meta itemprop="position" content="1" />
+                </li>
+                <li>
+<i class="fas fa-chevron-right chevron-separator"></i>
+</li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+<a itemprop="item" href="/programmes/">
+<span itemprop="name">Éditeurs Markdown</span>
+</a>
+<meta itemprop="position" content="2" />
+</li>
+<li>
+<i class="fas fa-chevron-right chevron-separator"></i>
+</li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+<span itemprop="name">Notion</span>
+<meta itemprop="position" content="3" />
+</li>
+
+              </ol>
+            </div>
+            <div class="col s12 m5 l4 mt-s-30" align="center">
+            	<!-- square-fixed-300-250 -->
+            	<ins class="adsbygoogle"
+            	     style="display:inline-block;width:300px;height:250px"
+            	     data-ad-client="ca-pub-3427355473051563"
+            	     data-ad-slot="1035906960"></ins>
+            	<script>
+            	     (adsbygoogle = window.adsbygoogle || []).push({});
+            	</script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <!--  Outer row  -->
+        <div class="row">
+          <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
+            <div class="row scrollspy">
+  <div class="col s12">
+    <div class="image-container mt-60">
+      <img src="https://markdown.net.br/assets/img/notion-window.png" class="materialboxed" alt="Markdown - Fenêtre d'application Notion!" title="Markdown - Fenêtre d'application Notion!">
+    </div>
+
+    <h2 id="intro">Aperçu</h2>
+
+    <p>Notion est un outil très polyvalent, certaines entreprises l'utilisent pour des notes, d'autres pour gérer une base de connaissances et plusieurs pour le suivi de projets.</p>
+
+    <p>Le programme présente une certaine similitude avec le système wiki, mais n'utilise que l'application pour avoir une meilleure idée de ce dont il est capable.</p>
+
+    <p class="mv-40">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-3427355473051563"
+             data-ad-slot="3854885260"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </p>
+
+    <p>La compatibilité de Notion est très bonne, l'outil a des versions pour Web, les appareils mobiles et aussi pour Desktop.</p>
+
+    <p>Avec la version online, il est possible de travailler avec la synchronisation de documents.</p>
+
+    <p>Quand on parle de support pour Markdown dans Notion, les choses se compliquent un peu.</p>
+
+    <p>Le fait est que si vous copiez du contenu au format Markdown dans l'éditeur d'outils, les choses fonctionnent généralement comme vous le souhaitez.</p>
+
+    <p class="mv-40">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-3427355473051563"
+             data-ad-slot="3854885260"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </p>
+
+    <p>L'utilisation du propre éditeur du programme pour créer des fichiers Markdown ne fonctionne pas toujours. L'utilisation d'astérisques, par exemple, pour formater en gras fonctionne parfaitement, maintenant, en utilisant des parenthèses pour créer links ou même penser.</p>
+
+    <p>Ce qui peut dérouter les utilisateurs, car copier et coller un link au format Markdown dans l'éditeur fonctionne!</p>
+
+    <p>Un autre point à noter est la difficulté d'éditer le document Markdown que vous avez collé dans le programme, même si cela fonctionne, l'outil ne semble pas avoir été développé pour cela.</p>
+
+    <p class="mv-40">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-3427355473051563"
+             data-ad-slot="3854885260"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </p>
+
+    <p>Plus d'informations sur Notion sur <a href="https://www.notion.so/" target="_blank">https://www.notion.so/</a>.</p>
+
+
+    <h2 id="markdown-support">Prise en charge de Markdown dans Notion</h2>
+
+    <p>Le <a href="#table-1-1">Tableau 1.1</a> montre les éléments Markdown compatibles avec Notion.</p>
+
+    <table class="responsive-table" id="table-1-1">
+      <thead>
+        <tr>
+          <th>Élément</th>
+          <th>Soutien</th>
+          <th>Informations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="/syntaxe-de-base/#headings" target="_blank">Titres</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#paragraphs" target="_blank">Les paragraphes</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#line-break" target="_blank">Sauts de ligne</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td>Ici, nous avons deux situations: premièrement, si le contenu a été collé dans l'éditeur, utilisez la barre oblique inverse <code class="lang-plaintext">\</code> ou appuyez sur <code class="lang-plaintext">Enter</code> pour couper la ligne, deuxièmement: vous tapez le document Markdown directement dans le outil, dans ce cas, utilisez la combinaison de touches <code class="lang-plaintext">Shift</code> + <code class="lang-plaintext">Enter</code> pour rompre la ligne.</td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#bold" target="_blank">Gras</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#italics" target="_blank">Italique</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#blockquote" target="_blank">Blockquote</a></td>
+          <td class="yellow lighten-4">Partiel</td>
+          <td>Notion ne prend pas en charge le blockquotes imbriqué.</td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#lists-ordered" target="_blank">Listes ordonnées</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#lists-unordered" target="_blank">Listes non ordonnées</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#code" target="_blank">Code</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#horizontal-rule" target="_blank">Lignes horizontales</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#links" target="_blank">Links</a></td>
+          <td class="yellow lighten-4">Partiel</td>
+          <td>Notion vous permet de copier et coller un link formaté en Markdown dans le programme, maintenant, pour construire un link directement dans l'éditeur, utilisez la commande: <code class="lang-plaintext">/link</code>.</td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#images" target="_blank">Images</a></td>
+          <td class="yellow lighten-4">Partiel</td>
+          <td>La copie d'une image dans l'éditeur, au format Markdown, fonctionne comme prévu. Pour référencer une image directement dans l'outil utilisez la commande: <code class="lang-plaintext">/images</code>.</td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-tables" target="_blank">les tables</a></td>
+          <td class="yellow lighten-4">Partiel</td>
+          <td>Comme pour les éléments précédents, vous pouvez copier et coller la mise en forme de la table Markdown dans l'éditeur Notion. Pour créer une table directement dans le programme, utilisez la commande: <code class="lang-plaintext">/table-inline</code>.</td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#fenced-code-block" target="_blank">Blocs de code clôturés</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td>Notion prend en charge la mise en évidence du contenu à partir du bloc.</td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-footnotes" target="_blank">Notes de bas de page</a></td>
+          <td class="red lighten-4">Non</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-title-id" target="_blank">Identifiant du titre</a></td>
+          <td class="red lighten-4">Non</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-definition-lists" target="_blank">Listes de définitions</a></td>
+          <td class="red lighten-4">Non</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-strikethrough" target="_blank">Barré</a></td>
+          <td class="yellow lighten-4">Partiel</td>
+          <td>Voici une astuce, utilisez simplement un tilde autour du contenu que vous souhaitez rayer, par exemple: <code class="lang-plaintext">~contenu barré~</code>. Ce formatage, contrairement aux autres, ne fonctionne pas lorsqu'il est copié dans l'éditeur.</td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-task-lists" target="_blank">Listes de tâches</a></td>
+          <td class="yellow lighten-4">Partiel</td>
+          <td>Pour créer une liste de tâches dans Notion, utilisez la commande: <code class="lang-plaintext">/todo</code>. Copier et coller le formatage Markdown dans l'éditeur fonctionne également.</td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#emojis-copy-and-paste" target="_blank">Emoji (copier et coller)</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#emojis-access-code" target="_blank">Emoji (codes d'accès)</a></td>
+          <td class="red lighten-4">Non</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-auto-link" target="_blank">URL automatique Link</a></td>
+          <td class="green lighten-4">Ouais</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-etendue/#markdown-disable-auto-link" target="_blank">Désactiver URL automatique link</a></td>
+          <td class="red lighten-4">Non</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="/syntaxe-de-base/#html" target="_blank">HTML</a></td>
+          <td class="red lighten-4">Non</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="see-also">Voir aussi</h2>
+
+    <p><a href="https://www.notion.so/66e28cec810548c3a4061513126766b0" target="_blank">Notion: Apprenez les raccourcis</a></p>
+  </div> <!-- Fim do conteúdo principal -->
+
+</div>
+            <div class="col-12">
+  <ul class="collapsible">
+    <li class="active">
+      <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Partager</div>
+      <div class="collapsible-body">
+        <div class="collection">
+          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Notion® & Markdown™ - Table de formatage [Cheatsheet]" data-hashtags="markdown" data-url="https://fr.markdown.net.br/programmes/notion/">
+            <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Partager sur Twitter
+          </a>
+          <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://fr.markdown.net.br/programmes/notion/">
+            <i class="fab fa-facebook color-facebook"></i>&nbsp;&nbsp;Partager sur Facebook
+          </a>
+          <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://fr.markdown.net.br/programmes/notion/">
+            <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Partager sur Linkedin
+          </a>
+          <a href="#!" class="collection-item" data-sharer="email" data-title="Notion® & Markdown™ - Table de formatage [Cheatsheet]" data-url="https://fr.markdown.net.br/programmes/notion/" data-subject="Salut! D'accord? J'ai trouvé ce guide Markdown très facile à suivre, jetez-y un œil quand vous le pouvez. J'espère que ce sera utile, à plus tard." data-to="email@host.com">
+            <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Partager par email
+          </a>
+          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Notion® & Markdown™ - Table de formatage [Cheatsheet]" data-url="https://fr.markdown.net.br/programmes/notion/">
+            <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Partager par Whatsapp
+          </a>
+          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Notion® & Markdown™ - Table de formatage [Cheatsheet]" data-url="https://fr.markdown.net.br/programmes/notion/" data-to="(00) 99999-9999">
+            <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Partager par Telegram
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+          </div>
+          <!-- Table of contents -->
+          <div class="col hide-on-small-only m3 xl3 offset-xl1">
+            <div class="toc-wrapper" id="sticky-navigator">
+            </div>
+          </div>
+          <!-- Table of contents -->
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer docs-footer">
+  <div class="container">
+    <div class="row" style="margin-bottom: 0;">
+      <div class="col s12 m10 offset-m1">
+        <div class="row">
+          <div class="col l4 s12" style="overflow: hidden;">
+            <a href="https://twitter.com/CodigoNetwork" class="twitter-follow-button" data-show-count="true" data-size="large" data-dnt="true">Suivre @CodigoNetwork</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div>
+            &copy;&nbsp;<noscript>2020</noscript><script type="text/javascript">document.write(new Date().getFullYear());</script> <strong>Markdown</strong>, Tous les droits sont réservés.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <!--  Scripts-->
+    <script src="/assets/js/bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
+    <!-- Lightbox das imagens -->
+    <script>
+      $(document).ready(function(){
+         $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
+       });
+      anchors.add("h2, h3, h5");
+      $('#sticky-navigator').stickyNavigator();
+    </script>
+    <!-- Twitter Button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </body>
+</html>
